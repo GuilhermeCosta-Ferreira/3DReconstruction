@@ -1,1 +1,10 @@
-# 3DReconstruction
+# 3D Reconstruction
+This project was developed in the context of [Principles of Biosignals and Biomedical Imaging 2023/2024](https://fenix.tecnico.ulisboa.pt/cursos/lebiom21/disciplina-curricular/845953938490063). Here you can find the Matlab code as well with the delivered report. We were able to achieve a final project grade of 19.35/20.
+
+## Abstract
+Throughout different realities of the medical domain, it’s essential to study cellular structures due to the mechanism’s complexity and the biological processes. To do so, microscope observations are critical, and one of the most popular methods of structure elucidation in cell physiology is fluorescence microscopy. Given 28 histological slices from one cell containing two protein aggregates obtained by this technique, we applied fundamental steps from imaging processing. Moreover, this project has the purpose of reaching into a 3D reconstruction of the protein aggregates, which underlie the pathogenesis of neurodegenerative disorders, as well as computing the volume of these structures. Starting by removing characteristic noise from each slice through the Gaussian filter (after choosing it, compared to the median filter), we proceed to the segmentation and binarization phase, using the Search2Segment algorithm, a method developed by our group, which integrates the well-established Otsu method. During each stage, different parameters were tested and compared, aiming to preserve edges that shape aggregate form. With the masks applied, we assembled and aligned them to reconstruct the protein aggregates and calculate their volume. Based on a voxel dimension, we got to the total volume equal to 170.40 μm3.
+
+## Group Members
+João Freitas: joao.ferreira.de.freitas@tecnico.ulisboa.pt <br>
+Catarina Gonçalves: catarinamarquesgoncalves@tecnico.ulisboa.pt <br>
+Guilherme Costa-Ferreira: guilherme.costa.ferreira@tecnico.ulisboa.pt
